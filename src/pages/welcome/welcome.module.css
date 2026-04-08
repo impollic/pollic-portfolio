@@ -1,33 +1,41 @@
 .welcome {
-    height: 100vh;
-    background: white;
-    padding-top: 70px;
-    position: relative;
-    z-index: 0;
+  min-height: 100vh;
+  background: white;
+  background-color: white;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
+
 .maincontent {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .text {
-    font-size: 64px;
-    text-align: center;
+  font-size: 64px;
+  text-align: center;
 }
 
 .gradient {
   font-weight: 600;
-  background: linear-gradient(90deg, #3979C2, #99CBEA);
+  background: linear-gradient(90deg, #3979c2, #99cbea);
   background-size: 200% 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: fadeInOnce 1s ease 0.5s forwards, gradientMove 3s linear infinite alternate;
+  animation:
+    fadeInOnce 1s ease 0.5s forwards,
+    gradientMove 3s linear infinite alternate;
   opacity: 0;
 }
 @keyframes gradientMove {
@@ -38,7 +46,6 @@
     background-position: 100% 50%;
   }
 }
-
 
 .waveContainer {
   position: absolute;
@@ -56,49 +63,49 @@
   height: 100%;
 }
 .sociais {
-    position: absolute;
-    top: 80px;
-    right: 10px;
-    display: flex;
-    gap: 10px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
 }
 .sociaisLink {
-    font-size: 24px;
-    transition: 200ms;
-    width: 50px;
-    height: 50px;
-    background: #000000;
-    border-radius: 10px;
-    cursor: pointer;
+  font-size: 24px;
+  transition: 200ms;
+  width: 45px;
+  height: 45px;
+  background: #000000;
+  border-radius: 10px;
+  cursor: pointer;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid transparent;
 }
 .sociaisLink:hover {
-    outline-color: #759dca;
-    scale: 1.03;
+  outline-color: #759dca;
+  scale: 1.03;
 }
 .developer {
-    font-family: "Outfit", sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: white;
-    background: #81bad2;
-    height: 70px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -120px;
-    left: 50%;
-    white-space: nowrap;
-    transform: translateX(-50%);
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 998;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  background: #81bad2;
+  height: 70px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 998;
 }
 
 @keyframes fadeInOnce {
